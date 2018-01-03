@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 import { FooterModule } from 'meepo-footer';
+
 @NgModule({
   declarations: [
     AppComponent
