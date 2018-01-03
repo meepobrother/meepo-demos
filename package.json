@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "git": "git add . && git commit -m 'back' && git push -u master"
+    "git": "git add . && git commit -m 'back' && git push origin master"
   },
   "private": true,
   "dependencies": {
