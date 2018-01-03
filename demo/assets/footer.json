@@ -1,0 +1,34 @@
+{
+    "code": "1",
+    "info": [
+        {
+            "title": "首页",
+            "icon": "home",
+            "role": "all",
+            "active": "on",
+            "link": "/index"
+        },
+        {
+            "title": "发布",
+            "icon": "ios-compose-outline",
+            "role": "all",
+            "active": "off",
+            "link": "/post"
+        },
+        {
+            "title": "其他",
+            "icon": "ios-bell-outline",
+            "role": "all",
+            "active": "off",
+            "link": "/other"
+        },
+        {
+            "title": "我的",
+            "icon": "ios-person-outline",
+            "role": "all",
+            "active": "off",
+            "link": "/home"
+        }
+    ],
+    "msg": "success"
+}
