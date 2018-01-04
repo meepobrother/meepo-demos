@@ -3492,8 +3492,8 @@ meepo-base@>=1.2.6:
     zone.js "0.8.4"
 
 meepo-category@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/meepo-category/-/meepo-category-1.1.2.tgz#dfe4f3568f8db80bca473c72ab26b5e9bfd86ea6"
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/meepo-category/-/meepo-category-1.1.6.tgz#0ca8ed4ad818a533e608bc55c28b95e39f12736d"
   dependencies:
     "@angular/common" ">=5.1.2"
     "@angular/core" ">=5.1.2"
