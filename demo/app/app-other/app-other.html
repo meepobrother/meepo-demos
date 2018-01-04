@@ -1,1 +1,11 @@
-<h2 class="title">other</h2>
+<category #category>
+    <ng-template #ref let-item>
+        <h2>{{item.title}}</h2>
+        <ul>
+            <li (click)="setItem(data)" *ngFor="let data of item.items">
+                <img [src]="data.image">
+                {{data.title}}
+            </li>
+        </ul>
+    </ng-template>
+</category>

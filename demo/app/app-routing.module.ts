@@ -30,12 +30,9 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  declarations: [
-    ...PageComponents
-  ],
   imports: [RouterModule.forRoot(routes, {
     useHash: true
   })],
-  exports: [RouterModule, ...PageComponents]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

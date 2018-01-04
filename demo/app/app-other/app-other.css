@@ -1,0 +1,24 @@
+h2 {
+    color: gray;
+    font-size: .9em;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+ul li {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
