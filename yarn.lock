@@ -97,6 +97,12 @@
   optionalDependencies:
     node-sass "^4.3.0"
 
+"@angular/common@5.2.0-beta.1":
+  version "5.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.2.0-beta.1.tgz#4d4a5c191faff678cbbb20e9366ce47f726429a2"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/common@>=5.1.2":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.3.tgz#db517c00a95f72885eb2091098eaed4f95494a63"
@@ -118,9 +124,21 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/core@5.2.0-beta.1":
+  version "5.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.0-beta.1.tgz#14984b81dd31ae35fe73d8063710eb4007756921"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/core@>=5.1.2":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.3.tgz#b739f69834c344285250a384d0c203dd36778a37"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/forms@5.2.0-beta.1":
+  version "5.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.0-beta.1.tgz#f32dabf92a22b9cdc46e2a50bbbf48f154f0c558"
   dependencies:
     tslib "^1.7.1"
 
@@ -143,6 +161,12 @@
 "@angular/platform-browser-dynamic@>=5.1.2":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.3.tgz#ad37e4dbd5251e7ea256ad9323fe11c848d04050"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/platform-browser@5.2.0-beta.1":
+  version "5.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.2.0-beta.1.tgz#44a971d9cfd3675c10f9924ffe0784b23a2e6bd3"
   dependencies:
     tslib "^1.7.1"
 
@@ -2745,6 +2769,10 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
+ionicons@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
+
 ip@^1.1.0, ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
@@ -3464,7 +3492,18 @@ meepo-article@>=1.1.3:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-axios@>=1.3.8:
+meepo-autosize@>=1.0.9:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/meepo-autosize/-/meepo-autosize-1.2.0.tgz#a1dacddbfb9b283a714d09b0fea971e80ec5512e"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/platform-browser" "5.2.0-beta.1"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-axios@>=1.2.0, meepo-axios@>=1.2.1, meepo-axios@>=1.3.7, meepo-axios@>=1.3.8:
   version "1.3.8"
   resolved "https://registry.yarnpkg.com/meepo-axios/-/meepo-axios-1.3.8.tgz#b0dba4694dcfdbe6af27ace0465d3ba8895776f1"
   dependencies:
@@ -3490,7 +3529,7 @@ meepo-base64@>=1.1.2, meepo-base64@>=1.1.6:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-base@>=1.2.6:
+meepo-base@>=1.0.4, meepo-base@>=1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/meepo-base/-/meepo-base-1.2.6.tgz#a9fe122a2edc5d09dfe190019bc1d3f5aba6b1ce"
   dependencies:
@@ -3502,6 +3541,23 @@ meepo-base@>=1.2.6:
     meepo-store ">=1.0.4"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-bmap@>=3.5.1:
+  version "3.6.9"
+  resolved "https://registry.yarnpkg.com/meepo-bmap/-/meepo-bmap-3.6.9.tgz#8cb6eb70686a5116aa20315cd20b04929852d62e"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/platform-browser" "5.2.0-beta.1"
+    meepo-axios ">=1.3.7"
+    meepo-base ">=1.0.4"
+    meepo-core ">=3.2.4"
+    meepo-picker ">=1.1.2"
+    meepo-store ">=1.0.4"
+    meepo-xscroll ">=1.4.4"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.0"
     zone.js "0.8.4"
 
 meepo-category@>=1.1.2:
@@ -3533,7 +3589,7 @@ meepo-category@>=1.1.2:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-core@>=3.1.3, meepo-core@>=3.2.5, meepo-core@>=3.2.7:
+meepo-core@>=2.9.4, meepo-core@>=3.0.4, meepo-core@>=3.1.3, meepo-core@>=3.2.4, meepo-core@>=3.2.5, meepo-core@>=3.2.7:
   version "3.2.8"
   resolved "https://registry.yarnpkg.com/meepo-core/-/meepo-core-3.2.8.tgz#a30ba82a2830d1fbec06134e9957d850f1ba92a4"
   dependencies:
@@ -3609,7 +3665,44 @@ meepo-footer@>=1.1.0:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-icons@>=1.0.7:
+meepo-forms@>=1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.7.2.tgz#02c52263e3224919965af00b4dc1757d244b663b"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/platform-browser" "5.2.0-beta.1"
+    meepo-autosize ">=1.0.9"
+    meepo-bmap ">=3.5.1"
+    meepo-core ">=2.9.4"
+    meepo-uploader ">=1.2.3"
+    meepo-uuid ">=1.0.8"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-home@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/meepo-home/-/meepo-home-2.0.0.tgz#a034bf4e8f67a2cd7e1b580ba4ab8bd799f25e55"
+  dependencies:
+    "@angular/common" ">=5.1.2"
+    "@angular/core" ">=5.1.2"
+    "@angular/forms" ">=5.1.2"
+    "@angular/platform-browser" ">=5.1.2"
+    "@angular/router" ">=5.1.2"
+    ionicons "^3.0.0"
+    meepo-base ">=1.0.4"
+    meepo-forms ">=1.7.2"
+    meepo-icons ">=1.0.6"
+    meepo-store ">=1.0.4"
+    meepo-uploader ">=1.6.0"
+    meepo-uuid ">=1.1.1"
+    meepo-xscroll ">=1.4.4"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-icons@>=1.0.6, meepo-icons@>=1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/meepo-icons/-/meepo-icons-1.0.7.tgz#ddb977b05d2ddf35754e38c3c0e369b2971978aa"
   dependencies:
@@ -3617,6 +3710,19 @@ meepo-icons@>=1.0.7:
     "@angular/core" ">=5.1.2"
     "@angular/platform-browser" ">=5.1.2"
     ng-inline-svg "^5.1.3"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-jssdk@>=1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/meepo-jssdk/-/meepo-jssdk-1.1.1.tgz#c170819eef6fb1710f3811e404ab04765cb0f1ba"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/forms" "5.2.0-beta.1"
+    meepo-axios ">=1.2.1"
+    meepo-core ">=3.0.4"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     zone.js "0.8.4"
@@ -3632,7 +3738,7 @@ meepo-loader@>=1.0.9, meepo-loader@>=1.1.1:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-loader@>=1.1.7, meepo-loader@^1.1.8:
+meepo-loader@>=1.1.7, meepo-loader@>=1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/meepo-loader/-/meepo-loader-1.1.8.tgz#edfcaf1d29e328eea73ca197ba22f50ad86df0fd"
   dependencies:
@@ -3644,8 +3750,8 @@ meepo-loader@>=1.1.7, meepo-loader@^1.1.8:
     zone.js "0.8.4"
 
 meepo-minirefresh@>=1.2.8:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/meepo-minirefresh/-/meepo-minirefresh-1.2.8.tgz#0306bd99b5ada788896c8730b7d1a1bb99efdc6f"
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/meepo-minirefresh/-/meepo-minirefresh-1.3.2.tgz#631fc87314039609b252681896ba918559b5edd0"
   dependencies:
     "@angular/common" ">=5.1.2"
     "@angular/core" ">=5.1.2"
@@ -3669,6 +3775,19 @@ meepo-permissions@>=1.1.7:
     "@angular/router" ">=5.1.2"
     meepo-core ">=3.2.5"
     meepo-event ">=1.1.0"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-picker@>=1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/meepo-picker/-/meepo-picker-1.1.2.tgz#55a6da0ada61ac3e1478fe51c0bab50e5e2e1aef"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/platform-browser" "5.2.0-beta.1"
+    meepo-uuid ">=1.1.1"
+    mobile-select ">=1.0.10"
     reflect-metadata "^0.1.10"
     rxjs "^5.5.5"
     zone.js "0.8.4"
@@ -3716,7 +3835,33 @@ meepo-swiper@>=1.1.1:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-uuid@>=1.1.1:
+meepo-ua@>=1.0.0:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/meepo-ua/-/meepo-ua-1.0.5.tgz#ccbce77d8b0b9196e799057def59e3093f7f3e36"
+  dependencies:
+    "@angular/common" ">=5.1.2"
+    "@angular/core" ">=5.1.2"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
+meepo-uploader@>=1.2.3, meepo-uploader@>=1.6.0:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/meepo-uploader/-/meepo-uploader-1.6.2.tgz#4d2be659cdb5b3ce09475fc8d8d95fb687d64f7d"
+  dependencies:
+    "@angular/common" ">=5.1.2"
+    "@angular/core" ">=5.1.2"
+    "@angular/platform-browser" ">=5.1.2"
+    meepo-axios ">=1.2.0"
+    meepo-core ">=2.9.4"
+    meepo-jssdk ">=1.0.2"
+    meepo-ua ">=1.0.0"
+    meepo-uuid ">=1.0.8"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.0"
+    zone.js "^0.8.4"
+
+meepo-uuid@>=1.0.8, meepo-uuid@>=1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/meepo-uuid/-/meepo-uuid-1.1.2.tgz#181aa33edc198433251f5b29ea77cdb61356f988"
   dependencies:
@@ -3727,7 +3872,7 @@ meepo-uuid@>=1.1.1:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-xscroll@>=1.2.9, meepo-xscroll@>=1.3.0, meepo-xscroll@>=1.4.5:
+meepo-xscroll@>=1.2.9, meepo-xscroll@>=1.3.0, meepo-xscroll@>=1.4.4, meepo-xscroll@>=1.4.5:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.4.6.tgz#542d8f1e1da35e391a032cd015048a1f898c7389"
   dependencies:
@@ -3880,6 +4025,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+mobile-select@>=1.0.10:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/mobile-select/-/mobile-select-1.0.11.tgz#189b0127003bd3621a880980d41186fd7e707ad1"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -6532,6 +6681,6 @@ zone.js@0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
 
-zone.js@^0.8.14:
+zone.js@^0.8.14, zone.js@^0.8.4:
   version "0.8.19"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.19.tgz#a4b522cd9e8b7b616a638c297d720d4c7f292f71"

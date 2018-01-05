@@ -11,7 +11,7 @@ export class AppComponent {
     public event: EventService
   ) {
     const now = new Date();
-    const version = new Date(now.getFullYear(), now.getMonth() + 1, now.getDate()).getTime();
+    const version = new Date(now.getFullYear(), now.getMonth() + 1, now.getDate(), now.getHours(), now.getMinutes()).getTime();
     this.event.checkVersion(version);
   }
 }

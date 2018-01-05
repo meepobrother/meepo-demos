@@ -5,7 +5,7 @@ import { SwiperModule } from 'meepo-swiper';
 import { FooterModule } from 'meepo-footer';
 import { CategoryModule } from 'meepo-category';
 import { ArticleModule } from 'meepo-article';
-
+import { HomeModule } from 'meepo-home';
 
 @NgModule({
     imports: [
@@ -18,7 +18,8 @@ import { ArticleModule } from 'meepo-article';
             url: './assets/footer.json'
         }),
         CategoryModule.forRoot('./assets/category.json'),
-        ArticleModule
+        ArticleModule,
+        HomeModule
     ],
     exports: [
         MinirefreshModule,
@@ -26,7 +27,8 @@ import { ArticleModule } from 'meepo-article';
         SwiperModule,
         FooterModule,
         CategoryModule,
-        ArticleModule
+        ArticleModule,
+        HomeModule
     ]
 })
 export class ShareModule { }

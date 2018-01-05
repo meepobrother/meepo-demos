@@ -27,7 +27,7 @@
             "icon": "ios-person-outline",
             "role": "all",
             "active": "off",
-            "link": "/home"
+            "link": "/home/index"
         }
     ],
     "msg": "success"

@@ -1,9 +1,9 @@
 <minirefresh-default (down)="down($event)" (up)="up($event)">
-    <swiper [items]="advs" debuger>
+    <swiper [items]="data.advs" debuger>
         <ng-template #ref let-item>
             <img [src]="item.image">
         </ng-template>
     </swiper>
-    <charm [items]="charms"></charm>
-    <article-list [items]="items"></article-list>
+    <charm [items]="data.charms"></charm>
+    <article-list [items]="data.items"></article-list>
 </minirefresh-default>
