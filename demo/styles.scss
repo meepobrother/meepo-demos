@@ -557,6 +557,7 @@ app-post {
     height: 100%;
     display: block;
     background: #efefef;
+    position: relative;
 }
 
 .main {
@@ -566,10 +567,11 @@ app-post {
 
 footer {
     position: fixed;
-    bottom: 0px;
+    bottom: -1px;
     left: 0px;
     right: 0px;
     display: block;
+    z-index: 9;
     .footer {
         position: relative !important;
         .footer-item {

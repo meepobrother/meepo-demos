@@ -1,1 +1,9 @@
-<h2 class="title">index</h2>
+<minirefresh-default (down)="down($event)" (up)="up($event)">
+    <swiper [items]="advs" debuger>
+        <ng-template #ref let-item>
+            <img [src]="item.image">
+        </ng-template>
+    </swiper>
+    <charm [items]="charms"></charm>
+    <article-list [items]="items"></article-list>
+</minirefresh-default>

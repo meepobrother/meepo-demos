@@ -7,8 +7,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
-import { FooterModule } from 'meepo-footer';
-import { CategoryModule } from 'meepo-category';
+
+import { ShareModule } from './share/share';
 
 @NgModule({
   declarations: [
@@ -19,10 +19,7 @@ import { CategoryModule } from 'meepo-category';
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
-    FooterModule.forRoot({
-      url: './assets/footer.json'
-    }),
-    CategoryModule.forRoot('./assets/category.json'),
+    ShareModule
   ],
   providers: [{
     provide: APP_BASE_HREF,
