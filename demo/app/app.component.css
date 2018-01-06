@@ -1,0 +1,5 @@
+.main{
+    display: block;
+    position: relative;
+    height: calc( 100% - 55px);
+}

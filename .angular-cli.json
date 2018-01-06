@@ -24,7 +24,8 @@
         "../node_modules/meepo-footer/app.css",
         "../node_modules/meepo-category/app.css",
         "../node_modules/meepo-minirefresh/app.css",
-        "../node_modules/meepo-swiper/app.css"
+        "../node_modules/meepo-swiper/app.css",
+        "../node_modules/meepo-bmap/app.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

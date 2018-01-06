@@ -560,6 +560,15 @@ app-post {
     position: relative;
 }
 
+app-root {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
 .main {
     display: block;
     position: relative;
@@ -583,4 +592,12 @@ footer {
             }
         }
     }
+}
+
+.category-slide {
+    height: 100% !important;
+}
+
+.minirefresh-totop{
+    bottom: 130px !important;
 }

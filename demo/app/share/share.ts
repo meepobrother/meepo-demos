@@ -6,6 +6,7 @@ import { FooterModule } from 'meepo-footer';
 import { CategoryModule } from 'meepo-category';
 import { ArticleModule } from 'meepo-article';
 import { HomeModule } from 'meepo-home';
+import { MeepoBmapModule } from 'meepo-bmap';
 
 @NgModule({
     imports: [
@@ -19,7 +20,8 @@ import { HomeModule } from 'meepo-home';
         }),
         CategoryModule.forRoot('./assets/category.json'),
         ArticleModule,
-        HomeModule
+        HomeModule,
+        MeepoBmapModule
     ],
     exports: [
         MinirefreshModule,
@@ -28,7 +30,8 @@ import { HomeModule } from 'meepo-home';
         FooterModule,
         CategoryModule,
         ArticleModule,
-        HomeModule
+        HomeModule,
+        MeepoBmapModule
     ]
 })
 export class ShareModule { }
