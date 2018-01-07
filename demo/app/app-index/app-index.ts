@@ -3,6 +3,10 @@ import { MeepoCache } from 'meepo-base';
 import { StoreService } from 'meepo-store';
 import { Title } from '@angular/platform-browser';
 import { AxiosService } from 'meepo-axios';
+import { EventService } from 'meepo-event';
+import { HEADER_SHOWN, HEADER_HIDDEN } from 'meepo-header';
+import { FOOTER_HIDDEN, FOOTER_SHOWN } from 'meepo-footer';
+
 
 @Component({
     selector: 'app-index',
@@ -19,7 +23,8 @@ export class AppIndexComponent extends MeepoCache {
         public store: StoreService,
         public cd: ChangeDetectorRef,
         public title: Title,
-        public axios: AxiosService
+        public axios: AxiosService,
+        public event: EventService
     ) {
         super(store, cd, title);
     }
@@ -35,6 +40,8 @@ export class AppIndexComponent extends MeepoCache {
             e.next(hasMore);
             this.cd.markForCheck();
         });
+        this.event.publish(HEADER_HIDDEN, '');
+        this.event.publish(FOOTER_SHOWN, '');
     }
 
     down(e?: any) {
@@ -45,6 +52,8 @@ export class AppIndexComponent extends MeepoCache {
             if (e) {
                 e.next(false);
             }
+            this.event.publish(HEADER_SHOWN, '');
+            this.event.publish(FOOTER_HIDDEN, '');
             this.cd.markForCheck();
         });
     }

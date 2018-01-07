@@ -583,13 +583,14 @@ footer {
     z-index: 9;
     .footer {
         position: relative !important;
-        .footer-item {
-            font-size: .8em;
-            padding: 0px !important;
-            height: 55px;
-            ion {
-                margin-bottom: 0px !important;
-            }
+    }
+    .footer-item {
+        font-size: .8em;
+        padding: 0px !important;
+        height: 55px;
+        line-height: 1 !important;
+        ion {
+            margin-bottom: 0px !important;
         }
     }
 }
@@ -598,6 +599,20 @@ footer {
     height: 100% !important;
 }
 
-.minirefresh-totop{
+.minirefresh-totop {
     bottom: 130px !important;
+}
+
+.minirefresh-upwrap {
+    display: none;
+}
+
+footer {
+    box-shadow: 0px -1px 7px #ccc;
+}
+
+header-container {
+    &:after {
+        box-shadow: 0px 1px 7px #ccc;
+    }
 }

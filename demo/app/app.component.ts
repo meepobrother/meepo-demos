@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { EventService } from 'meepo-event';
+import { EventService, WinEventService } from 'meepo-event';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,10 +9,15 @@ import { EventService } from 'meepo-event';
 export class AppComponent {
 
   constructor(
-    public event: EventService
+    public event: EventService,
+    public win: WinEventService
   ) {
     const now = new Date();
     const version = new Date(now.getFullYear(), now.getMonth() + 1, now.getDate()).getTime();
     this.event.checkVersion(version);
+
+    this.event.subscribe('onscroll', () => {
+      console.log('onscroll');
+    });
   }
 }
