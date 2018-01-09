@@ -1,11 +1,26 @@
-<div class="header">
-    <header-container>
-        <span left>左边</span>
-        <span>小明跑腿</span>
-        <span right>右边</span>
-    </header-container>
-</div>
-<div class="main">
-    <router-outlet></router-outlet>
-</div>
-<footer></footer>
+<swiper-h [width]="menuWidth">
+    <div swiperLeft>
+        <core-menu></core-menu>
+    </div>
+    <div swiperCenter>
+        <layout-v>
+            <div layoutHeader>
+                <layout-h>
+                    <div layoutLeft (click)="openLeftMenu($event)">
+                        <ion name="navicon"></ion>
+                    </div>
+                    <div layoutCenter>
+                        杭州市
+                    </div>
+                    <div layoutRight (click)="openRightMenu($event)">
+                        <ion name="ios-email-outline"></ion>
+                    </div>
+                </layout-h>
+            </div>
+            <div layoutBody>
+                <router-outlet></router-outlet>
+            </div>
+        </layout-v>
+    </div>
+    <div swiperRight></div>
+</swiper-h>

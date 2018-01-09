@@ -1,0 +1,21 @@
+<layout-v>
+    <div layoutHeader>
+        <div class="footer_container">
+            <core-time (onPicker)="onTimePicker($event)"></core-time>
+            <div class="address_item" *ngIf="startSetting?.show" (click)="_onStartAddressSelect()">
+                <span class="home_unlock_to_success_17"></span>
+                <input class="weui-input" *ngIf="startLoading" type="text" readonly disabled placeholder="正在获取位置...">
+                <input class="weui-input" *ngIf="!startLoading" type="text" readonly disabled [attr.value]="app.start.address + (app.start.title ? '('+ app.start.title +')' : '')">
+                <span class="bt_ic_postal_code" (click)="myLocation($event,true)"></span>
+            </div>
+            <div class="address_item_divider"></div>
+            <div class="address_item" *ngIf="endSetting?.show" (click)="_onEndAddressSelect()">
+                <span class="bg_redpacket_marker"></span>
+                <input class="weui-input" *ngIf="endLoading" type="text" readonly disabled placeholder="请选择位置...">
+                <input class="weui-input" *ngIf="!endLoading" type="text" readonly disabled [attr.value]="app.end.address + (app.end.title ? ('('+ app.end.title + ')') : '')">
+                <span class="bt_ic_postal_code" (click)="myLocation($event,false)"></span>
+            </div>
+        </div>
+    </div>
+    <div layoutBody></div>
+</layout-v>

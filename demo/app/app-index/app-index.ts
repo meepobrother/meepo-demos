@@ -10,14 +10,17 @@ import { FOOTER_HIDDEN, FOOTER_SHOWN } from 'meepo-footer';
 
 @Component({
     selector: 'app-index',
-    templateUrl: './app-index.html'
+    templateUrl: './app-index.html',
+    styleUrls: ['./app-index.scss']
 })
 export class AppIndexComponent extends MeepoCache {
     key: string = 'app.index';
+    offset: number = 0;
     data: any = {
         advs: [],
-        items: [],
-        charms: []
+        runners: [],
+        tasks: [],
+        city: {}
     };
     constructor(
         public store: StoreService,
@@ -29,32 +32,18 @@ export class AppIndexComponent extends MeepoCache {
         super(store, cd, title);
     }
 
+    openMenu(e: Event) {
+        this.event.publish('menu.open', '');
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
+    initForms(e: any) {
+        this.offset = e;
+        this.cd.detectChanges();
+    }
+
     meepoInit() {
-        this.down();
-    }
-
-    up(e?: any) {
-        this.axios.get('./assets/index.json').subscribe((res: any) => {
-            this.data.items = [...this.data.items, ...res.info.items];
-            const hasMore = false;
-            e.next(hasMore);
-            this.cd.markForCheck();
-        });
-        this.event.publish(HEADER_HIDDEN, '');
-        this.event.publish(FOOTER_SHOWN, '');
-    }
-
-    down(e?: any) {
-        this.axios.get('./assets/index.json').subscribe((res: any) => {
-            this.data.items = res.info.items;
-            this.data.advs = res.info.advs;
-            this.data.charms = res.info.charms;
-            if (e) {
-                e.next(false);
-            }
-            this.event.publish(HEADER_SHOWN, '');
-            this.event.publish(FOOTER_HIDDEN, '');
-            this.cd.markForCheck();
-        });
+        console.log('meepoInit');
     }
 }

@@ -7,7 +7,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
-import { ShareModule } from './share/share';
+import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ShareModule } from './share/share';
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
-    ShareModule
+    CoreModule.forRoot()
   ],
   providers: [{
     provide: APP_BASE_HREF,

@@ -1,0 +1,39 @@
+{
+    "code": 1,
+    "msg": "获取成功",
+    "info": {
+        "user": {},
+        "menus": [
+            {
+                "title": "订单",
+                "icon": "ios-bell-outline"
+            },
+            {
+                "title": "钱包",
+                "icon": "ios-pulse"
+            },
+            {
+                "title": "客服",
+                "icon": "ios-chatbubble-outline"
+            },
+            {
+                "title": "设置",
+                "icon": "ios-gear-outline"
+            }
+        ],
+        "others": [
+            {
+                "title": "商户入驻",
+                "icon": "ios-refresh-outline"
+            },
+            {
+                "title": "跑腿招募",
+                "icon": "ios-cloud-upload-outline"
+            },
+            {
+                "title": "团队入驻",
+                "icon": "ios-heart-outline"
+            }
+        ]
+    }
+}

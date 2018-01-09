@@ -1,0 +1,18 @@
+.main {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+[layoutHeader] {
+    line-height: 44px;
+    height: 44px;
+    background: #fff;
+    padding: 0 10px;
+    ion {
+        font-size: 30px;
+    }
+    [layoutCenter]{
+        text-align: center;
+    }
+}

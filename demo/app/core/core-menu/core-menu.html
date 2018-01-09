@@ -1,0 +1,31 @@
+<swiper-v offset="80">
+    <div swiperBody>
+        <div class="core-menu-header">
+            <div class="avatar">
+                <img [src]="info.avatar" />
+            </div>
+            <div class="nickname">
+                {{info.nickname || '游客'}}
+            </div>
+            <div class="tag">
+                {{info.tag || '未完善'}}
+            </div>
+        </div>
+        <ul>
+            <li *ngFor="let item of menus">
+                <ion [name]="item.icon"></ion>
+                {{item.title}}
+            </li>
+        </ul>
+    </div>
+    <div swiperBottom>
+        <ul>
+            <li *ngFor="let item of others">
+                <div class="container">
+                    <ion [name]="item.icon"></ion>
+                    <p>{{item.title}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</swiper-v>

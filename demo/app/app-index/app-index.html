@@ -1,9 +1,8 @@
-<minirefresh-default (down)="down($event)" (up)="up($event)">
-    <swiper [items]="data.advs" debuger>
-        <ng-template #ref let-item>
-            <img [src]="item.image">
-        </ng-template>
-    </swiper>
-    <charm [items]="data.charms"></charm>
-    <article-list [items]="data.items"></article-list>
-</minirefresh-default>
+<swiper-v [absolute]="true" [options]="{slideToClickedSlide: false}" [offset]="offset">
+    <div swiperBody>
+        <bmap></bmap>
+    </div>
+    <div swiperBottom>
+        <core-forms (init)="initForms($event)"></core-forms>
+    </div>
+</swiper-v>
