@@ -41,6 +41,11 @@ export class CoreFormsComponent implements OnInit, AfterViewInit, AfterContentCh
 
     ngOnInit() { }
 
+    touchstart(e: Event) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
     ngAfterViewInit() {
         const height = this.header.getHeight();
         this.height$.next(height);

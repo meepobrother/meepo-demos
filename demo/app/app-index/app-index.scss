@@ -1,4 +1,3 @@
-
 [layoutCenter] {
     text-align: center;
 }
@@ -6,4 +5,10 @@
 [layoutBody] {
     height: 100%;
     background: #efefef;
+}
+
+core-forms {
+    position: relative;
+    display: block;
+    height: 100%;
 }

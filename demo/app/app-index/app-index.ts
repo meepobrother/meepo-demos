@@ -16,6 +16,7 @@ import { FOOTER_HIDDEN, FOOTER_SHOWN } from 'meepo-footer';
 export class AppIndexComponent extends MeepoCache {
     key: string = 'app.index';
     offset: number = 0;
+    absolute: boolean = true;
     data: any = {
         advs: [],
         runners: [],

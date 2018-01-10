@@ -1,6 +1,17 @@
 core-forms {
-    [layoutBody]{
+    layout-v {
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+    [layoutBody] {
         overflow: auto;
+        position: relative;
+        minirefresh-default {
+            position: relative;
+            height: 100%;
+            display: block;
+        }
     }
     .footer_container {
         position: relative;
