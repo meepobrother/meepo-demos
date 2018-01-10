@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { AxiosService } from 'meepo-axios';
 
 @Component({
@@ -10,8 +10,11 @@ export class CoreMenuComponent implements OnInit {
     menus: any[] = [];
     others: any[] = [];
     info: any = {};
+
+    absolute: boolean = true;
     constructor(
-        public axios: AxiosService
+        public axios: AxiosService,
+        public cd: ChangeDetectorRef
     ) { }
 
     ngOnInit() {
@@ -29,6 +32,13 @@ export class CoreMenuComponent implements OnInit {
                 }
             }
         });
+    }
+
+    onEnd(res) {
+        if (res) {
+            this.absolute = !res.isEnd;
+            this.cd.markForCheck();
+        }
     }
 
 }

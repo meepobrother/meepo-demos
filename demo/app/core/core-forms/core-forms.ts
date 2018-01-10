@@ -5,6 +5,8 @@ import {
 } from '@angular/core';
 import { LayoutVComponent, LayoutHeaderDirective } from 'meepo-layout';
 import { Subject } from 'rxjs/Subject';
+import { SwiperScrollComponent } from 'meepo-swiper';
+import { EventService } from 'meepo-event';
 
 @Component({
     selector: 'core-forms',
@@ -16,6 +18,7 @@ export class CoreFormsComponent implements OnInit, AfterViewInit, AfterContentCh
     @ViewChild(LayoutVComponent) v: LayoutVComponent;
     @ViewChild(LayoutHeaderDirective) header: LayoutHeaderDirective;
     @Output() init: EventEmitter<any> = new EventEmitter();
+    @ViewChild('scroll') scroll: SwiperScrollComponent;
     app: any = {};
     total: number = 0;
     startSetting: any = {
@@ -33,7 +36,13 @@ export class CoreFormsComponent implements OnInit, AfterViewInit, AfterContentCh
 
 
     btnTitle: string = '立即下单';
-    constructor() {
+
+    items: any[] = [{}, {}, {}, {}, {}, {}];
+    height$: Subject<any> = new Subject();
+
+    constructor(
+        public event: EventService
+    ) {
         this.height$.debounceTime(100).subscribe(res => {
             this.init.emit(res);
         });
@@ -41,19 +50,22 @@ export class CoreFormsComponent implements OnInit, AfterViewInit, AfterContentCh
 
     ngOnInit() { }
 
-    touchstart(e: Event) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-
     ngAfterViewInit() {
         const height = this.header.getHeight();
         this.height$.next(height);
+        this.scroll.setItems(this.items);
     }
-    height$: Subject<any> = new Subject();
     ngAfterContentChecked() {
         const height = this.header.getHeight();
         this.height$.next(height);
+    }
+
+    up(e: any) {
+        e.next();
+    }
+
+    down(e: any) {
+        e.next();
     }
 
     onTimePicker(e: any) { }

@@ -8,5 +8,8 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+platformBrowserDynamic().bootstrapModule(AppModule).then(res => {
+  console.log('loadered', res);
+}).catch(res => {
+  console.log('load error', res);
+});

@@ -23,11 +23,11 @@
         "../node_modules/meepo-icons/app.css",
         "../node_modules/meepo-footer/app.css",
         "../node_modules/meepo-category/app.css",
-        "../node_modules/meepo-minirefresh/app.css",
         "../node_modules/meepo-swiper/app.css",
         "../node_modules/meepo-bmap/app.css",
         "../node_modules/meepo-layout/app.css",
-        "../node_modules/meepo-forms/app.css"
+        "../node_modules/meepo-forms/app.css",
+        "../node_modules/meepo-picker/app.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

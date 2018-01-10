@@ -8,8 +8,10 @@
     .time_select_item {
         padding: 6px 7px;
         font-size: .9em;
+        color: gray;
         &.active {
             position: relative;
+            color: gray;
             &:after {
                 content: " ";
                 position: absolute;
@@ -27,6 +29,7 @@
         width: 10px;
     }
 }
+
 .time_select_detail {
     text-align: center;
     font-size: .8em;

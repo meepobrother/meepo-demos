@@ -9,6 +9,18 @@
     height: 44px;
     background: #fff;
     padding: 0 10px;
+    position: relative;
+    &:after {
+        content: " ";
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        height: 1px;
+        color: #ccc;
+        background: #ccc;
+        transform: scaleX(.5);
+    }
     ion {
         font-size: 30px;
     }

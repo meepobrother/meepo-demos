@@ -17,55 +17,12 @@
             </div>
         </div>
     </div>
-    <div layoutBody (touchstart)="touchstart($event)">
-        <minirefresh>
-            <ul>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody3</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody2</li>
-                <li>layoutBody3</li>
-                <li>layoutBody4</li>
-            </ul>
-        </minirefresh>
+    <div layoutBody>
+        <swiper-scroll #scroll (up)="up($event)" (down)="down($event)">
+            <ng-template let-item>
+                    layoutBody
+            </ng-template>
+        </swiper-scroll>
     </div>
 </layout-v>
+

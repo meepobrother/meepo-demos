@@ -2,6 +2,18 @@
     background: #fff;
     display: block;
     height: 100%;
+    position: relative;
+    &:after {
+        content: " ";
+        position: absolute;
+        right: 0px;
+        bottom: 140px;
+        top: 50px;
+        width: 1px;
+        color: #ccc;
+        background: #ccc;
+        transform: scaleX(.5);
+    }
 }
 
 [swiperBottom] {

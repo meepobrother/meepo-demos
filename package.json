@@ -24,6 +24,7 @@
     "@angular/router": ">=5.1.2",
     "@angular/service-worker": ">=5.1.2",
     "core-js": "^2.4.1",
+    "es6-promise-polyfill": "^1.2.0",
     "meepo-address": ">=1.1.6",
     "meepo-article": ">=1.1.3",
     "meepo-autosize": ">=1.3.2",
@@ -43,7 +44,7 @@
     "meepo-minirefresh": "^1.3.5",
     "meepo-permissions": ">=1.2.2",
     "meepo-picker": ">=1.3.4",
-    "meepo-swiper": "^3.6.6",
+    "meepo-swiper": "^3.8.9",
     "meepo-uploader": ">=1.6.8",
     "rxjs": "^5.5.2",
     "zone.js": "0.8.4"

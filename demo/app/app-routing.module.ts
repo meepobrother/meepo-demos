@@ -23,6 +23,9 @@ const routes: Routes = [{
 }, {
   path: 'post',
   component: AppPostComponent
+}, {
+  path: '**',
+  component: AppIndexComponent
 }];
 
 @NgModule({

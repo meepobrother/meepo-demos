@@ -12,7 +12,6 @@ import { MeepoBmapModule } from 'meepo-bmap';
 import { LayoutModule } from 'meepo-layout';
 import { PickerModule } from 'meepo-picker';
 import { MeepoFormsModule } from 'meepo-forms';
-import { MinirefreshModule } from 'meepo-minirefresh';
 import { CategoryModule } from 'meepo-category';
 
 
@@ -26,7 +25,6 @@ import { CategoryModule } from 'meepo-category';
         LayoutModule,
         PickerModule,
         MeepoFormsModule,
-        MinirefreshModule,
         CategoryModule
     ],
     exports: [
@@ -40,7 +38,6 @@ import { CategoryModule } from 'meepo-category';
         LayoutModule,
         PickerModule,
         MeepoFormsModule,
-        MinirefreshModule,
         CategoryModule
     ],
     declarations: [

@@ -1,6 +1,6 @@
-<swiper-v [absolute]="absolute" [options]="{slideToClickedSlide: false}" [offset]="offset">
+<swiper-v #swiperV [absolute]="absolute" (onEnd)="onEnd($event)" [options]="{slideToClickedSlide: false, preventClicks: false}" [offset]="offset">
     <div swiperBody>
-        <bmap></bmap>
+        <bmap-container></bmap-container>
     </div>
     <div swiperBottom>
         <core-forms (init)="initForms($event)"></core-forms>
