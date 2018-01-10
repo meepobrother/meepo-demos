@@ -3636,7 +3636,7 @@ meepo-core@>=2.9.4, meepo-core@>=3.0.4, meepo-core@>=3.1.3, meepo-core@>=3.2.4, 
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-debuger@>=1.1.5, meepo-debuger@>=1.1.6:
+meepo-debuger@>=1.1.6, meepo-debuger@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/meepo-debuger/-/meepo-debuger-1.1.6.tgz#617cf10b860ea467ae4cfb8d35b8c2dcd424b04a"
   dependencies:
